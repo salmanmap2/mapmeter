@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapMeter - ধামইরহাট জোনাল অফিস</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            /* মোবাইলের জন্য টেক্সট সাইজ সমন্বয় করা হয়েছে */
+            @apply text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4;
+        }
+        .section-subtitle {
+            /* মোবাইলের জন্য টেক্সট ও প্যাডিং সমন্বয় করা হয়েছে */
+            @apply text-center text-gray-500 mb-10 md:mb-12 max-w-2xl mx-auto px-4;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./icon.png" alt="অ্যাপ আইকন" class="h-10 w-10 mr-3">
+                <a href="#" class="text-2xl font-bold text-gray-800">MapMeter</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-blue-600">ফিচার</a>
+                <a href="#how-to-use" class="text-gray-600 hover:text-blue-600">ব্যবহারবিধি</a>
+                <a href="#policy" class="text-gray-600 hover:text-blue-600">পলিসি</a>
+                <a href="#download" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors">অ্যাপ ডাউনলোড</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#features" class="block py-3 px-4 text-sm text-gray-700 hover:bg-gray-100">ফিচার</a>
+            <a href="#how-to-use" class="block py-3 px-4 text-sm text-gray-700 hover:bg-gray-100">ব্যবহারবিধি</a>
+            <a href="#policy" class="block py-3 px-4 text-sm text-gray-700 hover:bg-gray-100">পলিসি</a>
+            <a href="#download" class="block py-3 px-4 text-sm bg-blue-50 text-blue-700 font-semibold hover:bg-blue-100">অ্যাপ ডাউনলোড</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="download" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <img src="./icon.png" alt="অ্যাপ আইকন" class="h-24 w-24 mx-auto mb-6">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">MapMeter: মিটার ব্যবস্থাপনার আধুনিক সমাধান</h1>
+            <p class="text-gray-600 text-base md:text-lg mb-8">ধামইরহাট জোনাল অফিসের জন্য বিশেষভাবে তৈরি মিটার ম্যাপিং এবং ব্যবস্থাপনা অ্যাপ।</p>
+            <a href="#" class="bg-blue-600 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-full text-base md:text-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300">
+                এখনি ডাউনলোড করুন (v1.0)
+            </a>
+            <p class="text-sm text-gray-500 mt-4">শুধুমাত্র Android ডিভাইসের জন্য প্রযোজ্য</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">অ্যাপের প্রধান ফিচারসমূহ</h2>
+            <p class="section-subtitle">এই অ্যাপের মাধ্যমে মিটার সংক্রান্ত বিভিন্ন কাজ সহজে এবং দ্রুততার সাথে সম্পন্ন করা সম্ভব।</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-2">লাইভ লোকেশন ম্যাপিং</h3>
+                    <p class="text-gray-600">যেকোনো মিটারের সঠিক ভৌগোলিক অবস্থান ম্যাপে পিন করুন এবং সহজেই খুঁজে বের করুন।</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-2">অ্যাকাউন্ট নম্বর দিয়ে সার্চ</h3>
+                    <p class="text-gray-600">হাজারো মিটারের মধ্য থেকে নির্দিষ্ট কোনো মিটারকে তার অ্যাকাউন্ট নম্বর দিয়ে মুহূর্তেই খুঁজে বের করুন।</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-2">রিয়েল-টাইম ডাটা সিঙ্ক</h3>
+                    <p class="text-gray-600">Supabase এবং Drift ডাটাবেজের মাধ্যমে সকল তথ্য অনলাইন এবং অফলাইনে সিঙ্ক্রোনাইজড থাকে।</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-2">অটোমেটিক লোকেশন ডিটেকশন</h3>
+                    <p class="text-gray-600">নতুন মিটার যোগ করার সময় অ্যাপটি স্বয়ংক্রিয়ভাবে আপনার বর্তমান লোকেশন এবং ঠিকানা নিয়ে নেয়।</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-2">দিন ও রাতের ম্যাপ</h3>
+                    <p class="text-gray-600">কাজের সুবিধার জন্য দিন এবং রাতের ভিন্ন ভিন্ন ম্যাপ থিম ব্যবহার করার সুবিধা।</p>
+                </div>
+                 <div class="card">
+                    <h3 class="font-bold text-xl mb-2">নোট যুক্ত করার সুবিধা</h3>
+                    <p class="text-gray-600">প্রতিটি মিটারের সাথে প্রয়োজনীয় নোট বা মন্তব্য যোগ করে রাখুন, যা পরবর্তীতে সিদ্ধান্ত গ্রহণে সহায়ক হবে।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">কিভাবে ব্যবহার করবেন?</h2>
+            <div class="max-w-4xl mx-auto mt-8 space-y-6">
+                <div class="flex items-start">
+                    <div class="bg-blue-600 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4 flex-shrink-0">1</div>
+                    <p class="text-gray-700">ডাউনলোড বাটনে ক্লিক করে APK ফাইলটি আপনার ফোনে ডাউনলোড ও ইন্সটল করুন।</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-600 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4 flex-shrink-0">2</div>
+                    <p class="text-gray-700">অ্যাপটি চালু করে লোকেশন পারমিশন দিন। ম্যাপে আপনার এলাকার সকল মিটার দেখতে পাবেন।</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-600 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4 flex-shrink-0">3</div>
+                    <p class="text-gray-700">নতুন মিটার যোগ করতে (+) আইকনে ক্লিক করুন। অ্যাপটি আপনার বর্তমান লোকেশন স্বয়ংক্রিয়ভাবে নিয়ে নিবে, শুধু অ্যাকাউন্ট নম্বর দিন।</p>
+                </div>
+                 <div class="flex items-start">
+                    <div class="bg-blue-600 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4 flex-shrink-0">4</div>
+                    <p class="text-gray-700">সার্চ বারে অ্যাকাউন্ট নম্বর লিখে যেকোনো মিটার খুঁজুন অথবা ম্যাপে থাকা যেকোনো পিনে ক্লিক করে বিস্তারিত দেখুন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What's New Section -->
+    <section id="whats-new" class="py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">What's new in this release?</h2>
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow">
+                <h3 class="font-semibold text-lg mb-2">Version 1.0 (Initial Release)</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>প্রাথমিক রিলিজ - সকল কোর ফিচারসহ।</li>
+                    <li>স্বচ্ছ এবং ভাসমান সার্চ বার ডিজাইন।</li>
+                    <li>Android 13 এবং পরবর্তী ভার্সনের জন্য অপ্টিমাইজড লোকেশন পারমিশন।</li>
+                    <li>বাটনের অবস্থান এবং UI উন্নত করা হয়েছে।</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Section -->
+    <section id="policy" class="py-16 md:py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Terms & User Policy</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2">Terms and Conditions</h3>
+                    <p class="text-gray-600">এই অ্যাপটি শুধুমাত্র ধামইরহাট জোনাল অফিসের অভ্যন্তরীণ ব্যবহারের জন্য তৈরি করা হয়েছে। অ্যাপটির যেকোনো ধরনের অননুমোদিত ব্যবহার, বিতরণ বা বাণিজ্যিকীকরণ সম্পূর্ণভাবে নিষিদ্ধ। অ্যাপ ব্যবহারের সময় প্রাপ্ত সকল তথ্যের গোপনীয়তা রক্ষা করা ব্যবহারকারীর দায়িত্ব।</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2">User Policy</h3>
+                    <p class="text-gray-600">আমরা আপনার ব্যক্তিগত তথ্যের সুরক্ষায় প্রতিশ্রুতিবদ্ধ। এই অ্যাপটি সঠিকভাবে কাজ করার জন্য আপনার ডিভাইসের লোকেশন অ্যাক্সেস করার অনুমতি চায়। আমরা এই তথ্য শুধুমাত্র ম্যাপে মিটার এবং আপনার অবস্থান দেখানোর জন্য ব্যবহার করি। আপনার লোকেশন ডাটা আমাদের সার্ভারে সংরক্ষণ করা হয় না বা কোনো তৃতীয় পক্ষের সাথে শেয়ার করা হয় না।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 MapMeter - সর্বস্বত্ব সংরক্ষিত।</p>
+            <p>ধামইরহাট জোনাল অফিস, নওগাঁ।</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
